@@ -1,0 +1,25 @@
+{
+    "default": {
+        "paths": [
+            "tests/features/*.feature"
+        ],
+        "require": [
+            "tests/steps/*.ts",
+            "tests/pages/*.ts",
+            "tests/hooks/*.ts"
+        ],
+        "requireModule": [
+            "esbuild-register"
+        ],
+        "timeout": 10000,
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "format": [
+            "progress-bar",
+            "summary",
+            "html:cucumber-report.html",
+            "json:cucumber-report.json"
+        ]
+    }
+}

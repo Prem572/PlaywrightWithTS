@@ -1,0 +1,203 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "feature-to-demonstrate-event-management-ui;user-create-an-event-using-api-and-verify-in-ui",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User create an event using API and verify in UI",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3507067499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User Generate APi token for \"PremGadga@gmail.com\" and Password \"Prem@123456\"",
+            "match": {
+              "location": "tests\\steps\\eventManagerApiSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2053710799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "Event"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "eventDate",
+                      "2026-06-20T09:00:00.000Z"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "venue",
+                      "Halls"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "category",
+                      "Conference"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "city",
+                      "New York"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "totalSeats",
+                      "100"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "price",
+                      "100"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "description",
+                      "Description"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I Create an event using API with following details:",
+            "match": {
+              "location": "tests\\steps\\eventManagerApiSteps.ts:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 37167900,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at captureRawStack (D:\\Automation\\Playwright Automation\\node_modules\\playwright-core\\lib\\coreBundle.js:3130:17)\n    at callMatcherAsStep (D:\\Automation\\Playwright Automation\\node_modules\\playwright\\lib\\matchers\\expect.js:12873:57)\n    at Object.toBeTruthy (D:\\Automation\\Playwright Automation\\node_modules\\playwright\\lib\\matchers\\expect.js:12863:23)\n    at EventGeneration.addEvent (D:\\Automation\\Playwright Automation\\tests\\API\\eventGeneration.ts:43:46)\n    at async World.<anonymous> (D:\\Automation\\Playwright Automation\\tests\\steps\\eventManagerApiSteps.ts:20:23)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User login to app with username \"PremGadga@gmail.com\" and password \"Prem@123456\"",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User navigates to the event creation page",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I navigate to Events List page",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I verify that event is listed in the events table",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I delete the created event",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I verify that event is deleted from the events table",
+            "match": {
+              "location": "tests\\steps\\eventManagerSteps.ts:43"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1765671599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "feature-to-demonstrate-event-management-ui",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Feature to Demonstrate Event Management UI",
+    "tags": [],
+    "uri": "tests\\features\\EventManagementAPI.feature"
+  }
+]

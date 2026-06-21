@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "playwright": "^1.60.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.3",
+    "allure-commandline": "^2.42.1",
+    "allure-cucumberjs": "^3.10.0",
+    "allure-playwright": "^3.10.0",
+    "esbuild-register": "^3.6.0",
+    "install": "^0.13.0",
+    "npm": "^11.16.0"
+  },
+  "scripts": {
+  "test": "npx cucumber-js",
+    "report": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "test:report": "npm test && npm run report && npm run report:open",
+    "APIRun":"npx cucumber-js --tags @API"
+  }
+}
